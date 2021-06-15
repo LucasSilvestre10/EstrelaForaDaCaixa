@@ -1,0 +1,127 @@
+@font-face {
+    font-family: 'Misfits';
+    src: url('fonts/MISFITS.TTF') format('truetype');
+}
+
+body {
+    width: absolute;
+    height: absolute;
+    background-image: url(https://azeheb.com.br/blog/wp-content/uploads/2017/10/rick-and-morty-e-a-ciencias.jpg);
+    background-size: cover;
+    text-shadow: white 0px 0px 2px;
+    font-size: 20px;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}
+
+main>section {
+    margin-top: 13%;
+    padding: 5%;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.267);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+main>button {
+    margin-top: 2%;
+    margin-bottom: 13%;
+    cursor: pointer;
+    border-radius: 20px;
+    align-items: center;
+    font-family: Misfits;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.neon {
+    --color: rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+    padding: 25px 50px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all .5s ease-in;
+}
+
+:hover {
+    box-shadow: 0 0 25px var(--color), 0 0 50px var(--color), 0 0 100px var(--color), 0 0 200px var(--color);
+    color: rgb(0, 0, 0);
+}
+
+#inicial {
+    position: center;
+    display: center;
+    align-items: center;
+    text-align: center;
+    font-family: Misfits;
+    font-size: 250%;
+}
+
+main>section>div {
+    position: center;
+    display: center;
+    align-items: center;
+}
+
+#imagem1 {
+    border: 40px;
+    margin: 1%;
+    position: flex;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#imagem2 {
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#imagem3 {
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#imagem4 {
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+main>section p {
+    width: 250px;
+    height: 250px;
+    padding: 5%;
+    border-radius: 20px;
+    align-items: center;
+    font-family: Misfits;
+    font-size: 150%;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
