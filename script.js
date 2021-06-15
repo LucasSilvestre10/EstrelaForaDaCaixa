@@ -15,8 +15,7 @@ const div3 = document.getElementById('pic3')
 const div4 = document.getElementById('pic4')
 
 
-const maximumNumberOfCharacters = 671;
-generateRandomNumber = () => {return Math.floor(Math.random() * maximumNumberOfCharacters);}
+generateRandomNumber = () => {return Math.floor(Math.random() * 671);}
 
 getFirstPersonage = () => {
     const id = generateRandomNumber();
@@ -77,7 +76,7 @@ getFourthPersonage = () => {
     }) 
     
 }
-handleWithTheGame = () => {
+generateNewCharacters = () => {
     this.getFirstPersonage()
     this.getSecondPersonage()
     this.getThirdPersonage()
@@ -85,4 +84,4 @@ handleWithTheGame = () => {
     button.innerHTML = 'CONTINUAR'
     divInitial.style.display = 'none';
 }
-button.onclick = handleWithTheGame
+button.onclick = generateNewCharacters
